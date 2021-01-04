@@ -26,11 +26,14 @@ func systemSubscribeHook(c *CkMqtt, msg mqtt.Message){
 }
 //以上4个，先定义 成公共的
 
-
 //用户/前端，创建mqtt连接后的回调函数，这里可以做些日志处理、再订阅等操作
 func ConnectedAfterProductHook(c *CkMqtt){
 	fmt.Println("ConnectedAfterProductHook")
 	//os.Exit(-100)
+
+
+
+
 }
 //同上
 func ConnectedAfterConsumerHook(c *CkMqtt){

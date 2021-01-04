@@ -1,7 +1,7 @@
 package main
 
 import (
-	"configCenter"
+	"github.com/mqzhifu/configcenter"
 	"fmt"
 	"os"
 	"encoding/json"
