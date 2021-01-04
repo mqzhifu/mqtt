@@ -1,7 +1,6 @@
 package main
 
 import (
-<<<<<<< HEAD
 	"github.com/mqzhifu/configcenter"
 	"fmt"
 	"os"
@@ -17,7 +16,7 @@ import (
 //配置中心读取的目录 ，这里也可以使用http 方式，省略此配置项
 var rooPath = "/data/www/golang/src/configCenter/"
 //配置中心 类
-var configer * configCenter.Configer
+var configer * configcenter.Configer
 
 const (
 	//连接协议
@@ -178,7 +177,7 @@ func (ckMqtt *CkMqtt)  initConfigContainer(){
 	fileSizeMax := 2
 	fileCntMax :=100
 	allowExtType := "ini"
-	configer = configCenter.NewConfiger(fileTotalSizeMax,fileSizeMax,fileCntMax,allowExtType)
+	configer = configcenter.NewConfiger(fileTotalSizeMax,fileSizeMax,fileCntMax,allowExtType)
 	//让配置器，读取目录下的，所有配置文件，加载到内存
 	configer.StartLoading(rooPath)
 	//根据appId 取到该app-name
