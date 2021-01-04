@@ -1,6 +1,7 @@
 package main
 
 import (
+<<<<<<< HEAD
 	"github.com/mqzhifu/configcenter"
 	"fmt"
 	"os"
